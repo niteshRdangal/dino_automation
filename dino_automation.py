@@ -9,7 +9,7 @@ def hit(key):
 def draw():
     pass
 
-def isCollide(data):
+def cactusComming(data):
     for i in range(300,420):
             for j in range(605,657):
                 if data[i, j] >150:
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     while True:
         image =  ImageGrab.grab().convert('L') # converted the imgae into grayscale
         data = image.load() 
-        if isCollide(data):
+        if cactusComming(data):
             hit("up")
         #print(asarray(image)) # numpy asarray stored the image in array form
         # for i in range(300,420):
